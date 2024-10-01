@@ -27,15 +27,9 @@
               }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/magenta-violet.css",
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -91,7 +85,6 @@
               }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/magenta-violet.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -101,6 +94,6 @@
     }
   },
   "cli": {
-    "analytics": "d21de736-832a-4fab-a382-ea0203b28041"
+    "analytics": "7a89de7e-b0e6-4e7a-b322-56f64c91a882"
   }
 }
