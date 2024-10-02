@@ -1,0 +1,15 @@
+.top-bar-text {
+    color: whitesmoke;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+    background-color: black;
+}
