@@ -1,0 +1,85 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+                 [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+                 [mode]="(isHandset$ | async) ? 'over' : 'side'"
+                 [opened]="(isHandset$ | async) === false">
+        <mat-toolbar>Menu</mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item href="#">Link 1</a>
+            <a mat-list-item href="#">Link 2</a>
+            <a mat-list-item href="#">Link 3</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            @if (isHandset$ | async) {
+                <button
+                        type="button"
+                        aria-label="Toggle sidenav"
+                        mat-icon-button
+                        (click)="drawer.toggle()">
+                    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+                </button>
+            }
+            <span>Steve S. Lee</span>
+
+            <!--        ==========-->
+            <!--        my content-->
+            <!--        ==========-->
+            <span class="spacer"></span>
+            <div class="social-links-nav">
+            <a
+                    href="https://github.com/ssjlee93"
+                    aria-label="Github"
+                    target="_blank"
+                    rel="noopener"
+            >
+                <img
+                        src="github-mark-white.png"
+                        alt="Github"
+                        width="24"
+                        height="24"
+                        fill="none"
+                />
+            </a>
+            <a
+                    href="https://linkedin.com/in/sjl558"
+                    aria-label="Linkedin"
+                    target="_blank"
+                    rel="noopener"
+            >
+                <img
+                        src="In-Blue-128@2x.png"
+                        alt="Github"
+                        width="24"
+                        height="24"
+                        fill="none"
+                />
+            </a>
+            <a
+                    href="https://www.youtube.com/channel/UCbn1OgGei-DV7aSRo_HaAiw"
+                    aria-label="Youtube"
+                    target="_blank"
+                    rel="noopener"
+            >
+                <svg
+                        width="29"
+                        height="20"
+                        viewBox="0 0 29 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        alt="Youtube"
+                >
+                    <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M27.4896 1.52422C27.9301 1.96749 28.2463 2.51866 28.4068 3.12258C29.0004 5.35161 29.0004 10 29.0004 10C29.0004 10 29.0004 14.6484 28.4068 16.8774C28.2463 17.4813 27.9301 18.0325 27.4896 18.4758C27.0492 18.9191 26.5 19.2389 25.8972 19.4032C23.6778 20 14.8068 20 14.8068 20C14.8068 20 5.93586 20 3.71651 19.4032C3.11363 19.2389 2.56449 18.9191 2.12405 18.4758C1.68361 18.0325 1.36732 17.4813 1.20683 16.8774C0.613281 14.6484 0.613281 10 0.613281 10C0.613281 10 0.613281 5.35161 1.20683 3.12258C1.36732 2.51866 1.68361 1.96749 2.12405 1.52422C2.56449 1.08095 3.11363 0.76113 3.71651 0.596774C5.93586 0 14.8068 0 14.8068 0C14.8068 0 23.6778 0 25.8972 0.596774C26.5 0.76113 27.0492 1.08095 27.4896 1.52422ZM19.3229 10L11.9036 5.77905V14.221L19.3229 10Z"
+                    />
+                </svg>
+            </a>
+            </div>
+        </mat-toolbar>
+        <!-- Add Content Here -->
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
