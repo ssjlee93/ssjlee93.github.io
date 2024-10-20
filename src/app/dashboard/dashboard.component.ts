@@ -30,18 +30,18 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
+          { title: 'About', cols: 1, rows: 1 },
+          { title: 'Skills', cols: 1, rows: 1 },
+          { title: 'Blogs', cols: 1, rows: 1 },
+          { title: 'Projects', cols: 1, rows: 1 }
         ];
       }
 
       return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'About', cols: 2, rows: 1 },
+        { title: 'Skills', cols: 1, rows: 1 },
+        { title: 'Blogs', cols: 1, rows: 2 },
+        { title: 'Projects', cols: 1, rows: 1 }
       ];
     })
   );

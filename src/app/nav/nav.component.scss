@@ -33,3 +33,12 @@ svg {
   justify-content: center;
   gap: 1rem;
 }
+
+mat-sidenav-content {
+  background-color: black;
+}
+
+.button-row {
+  display: table-cell;
+  max-width: 600px;
+}
