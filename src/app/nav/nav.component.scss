@@ -1,6 +1,9 @@
-//.sidenav-container {
-//  //height: 100%;
-//}
+.sidenav-container {
+ height: 100%;
+ position: sticky;
+ top: 0;
+  z-index: 1000;
+}
 
 .sidenav {
   width: 200px;
@@ -14,10 +17,11 @@
   position: sticky;
   top: 0;
   z-index: -1;
+  background: oklch(47.66% 0.246 305.88)
 }
 
 mat-sidenav-content {
-  height: 10%;
+  background-color: black;
 }
 
 svg {
@@ -32,10 +36,6 @@ svg {
   display: flex;
   justify-content: center;
   gap: 1rem;
-}
-
-mat-sidenav-content {
-  background-color: black;
 }
 
 .button-row {
