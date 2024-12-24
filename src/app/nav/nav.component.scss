@@ -1,7 +1,7 @@
 .sidenav-container {
- height: 100%;
- position: sticky;
- top: 0;
+  height: 100%;
+  position: sticky;
+  top: 0;
   z-index: 1000;
 }
 
@@ -17,28 +17,19 @@
   position: sticky;
   top: 0;
   z-index: -1;
-  // background: oklch(47.66% 0.246 305.88)
-}
-
-mat-sidenav-content {
-  background-color: black;
-}
-
-svg {
-  z-index: 10;
 }
 
 .spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .social-links-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+display: flex;
+justify-content: center;
+gap: 1rem;
 }
 
 .button-row {
-  display: table-cell;
-  max-width: 600px;
+display: table-cell;
+max-width: 600px;
 }

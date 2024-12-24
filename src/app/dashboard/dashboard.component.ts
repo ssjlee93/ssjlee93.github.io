@@ -9,17 +9,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({
-    selector: 'app-dashboard',
-    templateUrl: './dashboard.component.html',
-    styleUrl: './dashboard.component.scss',
-    imports: [
-        AsyncPipe,
-        MatGridListModule,
-        MatMenuModule,
-        MatIconModule,
-        MatButtonModule,
-        MatCardModule
-    ]
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrl: './dashboard.component.scss',
+  standalone: true,
+  imports: [
+    AsyncPipe,
+    MatGridListModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule
+  ]
 })
 export class DashboardComponent {
   private breakpointObserver = inject(BreakpointObserver);
@@ -29,18 +30,18 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'About', cols: 1, rows: 1 },
-          { title: 'Skills', cols: 1, rows: 1 },
-          { title: 'Blogs', cols: 1, rows: 1 },
-          { title: 'Projects', cols: 1, rows: 1 }
+          { title: 'Card 1', cols: 1, rows: 1 },
+          { title: 'Card 2', cols: 1, rows: 1 },
+          { title: 'Card 3', cols: 1, rows: 1 },
+          { title: 'Card 4', cols: 1, rows: 1 }
         ];
       }
 
       return [
-        { title: 'About', cols: 2, rows: 1 },
-        { title: 'Skills', cols: 1, rows: 1 },
-        { title: 'Blogs', cols: 1, rows: 2 },
-        { title: 'Projects', cols: 1, rows: 1 }
+        { title: 'Card 1', cols: 2, rows: 1 },
+        { title: 'Card 2', cols: 1, rows: 1 },
+        { title: 'Card 3', cols: 1, rows: 2 },
+        { title: 'Card 4', cols: 1, rows: 1 }
       ];
     })
   );

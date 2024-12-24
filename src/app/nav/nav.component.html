@@ -1,41 +1,35 @@
 <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-        [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-        <mat-toolbar>Menu</mat-toolbar>
-        <mat-nav-list>
-            <a mat-list-item href="#">About</a>
-            <a mat-list-item routerLink="/skills">Skills</a>
-            <a mat-list-item href="#">Projects</a>
-            <a mat-list-item href="#">Blogs</a>
-        </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <mat-toolbar mat-primary color="primary">
-            @if (isHandset$ | async) {
-            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
-                <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-            </button>
-            }
-            <span mat-primary>Steve S. Lee</span>
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="/dashboard">Home</a>
+      <a mat-list-item href="/skills">Skills</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      @if (isHandset$ | async) {
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      }
+      <span>Steve S. Lee</span>
+      <span class="spacer"></span>
+      <div class="social-links-nav">
+        <div class="button-row">
+          <a mat-fab href="https://www.github.com/ssjlee93" aria-label="Github" target="_blank"
+            rel="noopener">
+            <img ngSrc="/github-mark-white.png" alt="Github" width="24" height="24" />
+          </a>
+          <a mat-fab href="https://www.linkedin.com/in/sjl558" aria-label="Linkedin" target="_blank" rel="noopener">
+            <img ngSrc="/In-Blue-128@2x.png" alt="Github" width="24" height="24" />
+          </a>
+        </div>
+      </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
 
-            <!--        ==========-->
-            <!--        my content-->
-            <!--        ==========-->
-            <span class="spacer"></span>
-            <div class="social-links-nav">
-                <div class="button-row">
-                    <a mat-button mat-primary href="https://github.com/ssjlee93" aria-label="Github" target="_blank"
-                        rel="noopener">
-                        <img ngSrc="/github-mark-white.png" alt="Github" width="24" height="24" />
-                    </a>
-                    <a mat-button href="https://linkedin.com/in/sjl558" aria-label="Linkedin" target="_blank"
-                        rel="noopener">
-                        <img ngSrc="/In-Blue-128@2x.png" alt="Github" width="24" height="24" />
-                    </a>
-                </div>
-            </div>
-        </mat-toolbar>
-        <!-- Add Content Here -->
-        <router-outlet />
-    </mat-sidenav-content>
+  </mat-sidenav-content>
 </mat-sidenav-container>

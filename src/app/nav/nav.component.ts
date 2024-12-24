@@ -8,23 +8,21 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import {RouterLink, RouterOutlet} from "@angular/router";
 
 @Component({
-    selector: 'app-nav',
-    templateUrl: './nav.component.html',
-    styleUrl: './nav.component.scss',
-    imports: [
-        MatToolbarModule,
-        MatButtonModule,
-        MatSidenavModule,
-        MatListModule,
-        MatIconModule,
-        AsyncPipe,
-        RouterOutlet,
-        RouterLink,
-        NgOptimizedImage
-    ]
+  selector: 'app-nav',
+  templateUrl: './nav.component.html',
+  styleUrl: './nav.component.scss',
+  standalone: true,
+  imports: [
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    AsyncPipe,
+    NgOptimizedImage
+  ]
 })
 export class NavComponent {
   private breakpointObserver = inject(BreakpointObserver);
