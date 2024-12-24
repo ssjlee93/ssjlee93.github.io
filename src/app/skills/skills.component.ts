@@ -8,11 +8,10 @@ export interface Tile {
   text: string;
 }
 @Component({
-  selector: 'app-skills',
-  standalone: true,
-  imports: [MatGridListModule, MatCardModule],
-  templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+    selector: 'app-skills',
+    imports: [MatGridListModule, MatCardModule],
+    templateUrl: './skills.component.html',
+    styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
   tiles: Tile[] = [
