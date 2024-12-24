@@ -1,8 +1,5 @@
 .sidenav-container {
   height: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .sidenav {
@@ -17,6 +14,7 @@
   position: sticky;
   top: 0;
   z-index: -1;
+  background: var(--mat-sys-primary-container);
 }
 
 .spacer {
@@ -24,12 +22,13 @@
 }
 
 .social-links-nav {
-display: flex;
-justify-content: center;
-gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .button-row {
-display: table-cell;
-max-width: 600px;
+  display: table-cell;
+  max-width: 600px;
+  margin-left: 8px;
 }
