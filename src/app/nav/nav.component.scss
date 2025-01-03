@@ -1,5 +1,8 @@
 .sidenav-container {
   height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .sidenav {
@@ -11,8 +14,10 @@
 }
 
 .mat-toolbar.mat-primary {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: -1;
   background: var(--mat-sys-primary-container);
 }

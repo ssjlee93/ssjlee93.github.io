@@ -9,9 +9,10 @@ export interface Tile {
 }
 @Component({
     selector: 'app-skills',
-    imports: [MatGridListModule, MatCardModule],
     templateUrl: './skills.component.html',
-    styleUrl: './skills.component.scss'
+    styleUrl: './skills.component.scss',
+    imports: [MatCardModule, MatGridListModule],
+    standalone: true
 })
 export class SkillsComponent {
   tiles: Tile[] = [
