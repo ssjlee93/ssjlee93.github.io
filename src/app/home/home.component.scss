@@ -160,3 +160,7 @@ a.docs-link:hover {
 .docs-homepage-promo mat-divider {
     width: 100%;
 }
+
+.docs-homepage-row-column + .docs-homepage-row-column {
+    margin-left: 2%;
+}
