@@ -1,8 +1,8 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   z-index: 10;
 }
 
@@ -16,7 +16,8 @@ div {
   unicode-bidi: isolate;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 400;
 }
 
@@ -45,6 +46,22 @@ main {
   unicode-bidi: isolate;
 }
 
+footer {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+a {
+  color: var(--mat-sys-on-surface-variant);
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .mat-divider {
   display: block;
   margin: 0;
@@ -53,22 +70,38 @@ main {
   border-top-width: var(--mat-divider-width, 1px);
 }
 
+app-footer {
+  display: block;
+  margin-top: 100px;
+}
+
+svg {
+  x: 0px;
+  y: 0px;
+  width: 960px;
+  height: 960px;
+}
+
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
 // buttons
 .mat-mdc-raised-button:not(:disabled) {
   color: var(--mdc-protected-button-label-text-color, var(--mat-sys-primary));
   background-color: var(--mdc-protected-button-container-color, var(--mat-sys-surface));
 }
 
-.mat-mdc-button, 
-.mat-mdc-unelevated-button, 
-.mat-mdc-raised-button, 
+.mat-mdc-button,
+.mat-mdc-unelevated-button,
+.mat-mdc-raised-button,
 .mat-mdc-outlined-button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.mat-mdc-raised-button, 
-.mat-mdc-raised-button 
-.mdc-button__ripple {
+.mat-mdc-raised-button,
+.mat-mdc-raised-button .mdc-button__ripple {
   border-radius: var(--mdc-protected-button-container-shape, var(--mat-sys-corner-full));
 }
 
@@ -108,12 +141,12 @@ main {
 }
 
 .mat-mdc-button .mdc-button__label,
-.mat-mdc-button .mat-icon, 
-.mat-mdc-unelevated-button .mdc-button__label, 
-.mat-mdc-unelevated-button .mat-icon, 
-.mat-mdc-raised-button .mdc-button__label, 
-.mat-mdc-raised-button .mat-icon, 
-.mat-mdc-outlined-button .mdc-button__label, 
+.mat-mdc-button .mat-icon,
+.mat-mdc-unelevated-button .mdc-button__label,
+.mat-mdc-unelevated-button .mat-icon,
+.mat-mdc-raised-button .mdc-button__label,
+.mat-mdc-raised-button .mat-icon,
+.mat-mdc-outlined-button .mdc-button__label,
 .mat-mdc-outlined-button .mat-icon {
   z-index: 1;
   position: relative;
