@@ -75,6 +75,12 @@ app-footer {
   margin-top: 100px;
 }
 
+app-logo {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
 svg {
   x: 0px;
   y: 0px;
@@ -86,6 +92,7 @@ svg:not(:root) {
   overflow-clip-margin: content-box;
   overflow: hidden;
 }
+
 
 // buttons
 .mat-mdc-raised-button:not(:disabled) {

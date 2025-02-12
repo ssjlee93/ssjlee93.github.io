@@ -45,6 +45,12 @@ footer {
     min-width: 225px;
     margin-top: 16px;
 }
+.docs-footer-copyright > div{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    text-align: center;
+}
 
 app-logo {
     width: 50px;
