@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-logo',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './logo.component.scss'
 })
 export class LogoComponent {
-
+  @Input() width = 50;
+  @Input() height = 50;
 }
