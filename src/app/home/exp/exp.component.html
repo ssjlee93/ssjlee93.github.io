@@ -15,15 +15,15 @@
             </mat-panel-description>
         </mat-expansion-panel-header>
 
-        <mat-list class="example-list-wrapping">
+        <mat-list class="list-wrapping">
             @for (highlight of exp.highlights; track highlight.keyword) {
             <mat-list-item lines="2">
-                <span matListItemTitle>{{ highlight.keyword }}</span>
+                <span matListItemTitle><mat-icon>check_small</mat-icon>{{ highlight.keyword }}</span>
                 <span>
                     {{ highlight.description }}
                 </span>
             </mat-list-item>
-        }
+            }
         </mat-list>
     </mat-expansion-panel>
     }

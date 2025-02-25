@@ -42,6 +42,6 @@ export class ExpComponent {
       - ${new Date(e.endDate).toLocaleString("default", {month: "short"})} ${new Date(e.endDate).getFullYear()}`
     };
     return exp as Exp;
-  });
+  }).sort((a, b) => b.endDate.getDate() - a.endDate.getDate());
   
 }

@@ -1,6 +1,31 @@
 [
     {
         "id": 1,
+        "title": "Junior Software Engineer",
+        "company": "Tardis Technology",
+        "startDate": "2021-02-01",
+        "endDate": "2021-06-18",
+        "highlights": [
+            {
+                "keyword": "Overview",
+                "description": "Developed proxy and management servers for the electric vehicle Charging Statin Management System (CSMS)"
+            },
+            {
+                "keyword": "Primary Contribution",
+                "description": "Created a WebSocket proxy server to communicate with chargers and HTTP server using REST API for the management system. Uses Java, Vert.x, RxJava, Websocket, Gradle, PostgreSQL."
+            },
+            {
+                "keyword": "Secondary Contributions",
+                "description": "Analyzed, designed, developed, and tested in converting PHP data crawler into Java, handling 80,000+ data points per scheduled data scanning from 4 different data sources. Uses MariaDB, RESTful API, SOAP API, Vert.x"
+            },
+            {
+                "keyword": "Communication",
+                "description": "Communicated with Open Charge Alliance (OCA) on behalf of the company for membership, testing, and certification regarding OCPP 1.6 and 2.0.1"
+            }
+        ]
+    },
+    {
+        "id": 4,
         "title": "Senior Systems Engineer",
         "company": "Infosys",
         "startDate": "2021-12-21",
@@ -8,15 +33,15 @@
         "highlights": [
             {
                 "keyword": "Overview",
-                "description": "Developed and maintained the company's internal software"
+                "description": "Contributed to 3 PaaS projects within a bank from gathering requirements to providing solutions"
             },
             {
-                "keyword": "Network Management",
-                "description": "Managed the company's internal network"
+                "keyword": "Training",
+                "description": "Completed  over 70+ hours of training in industry best practices such as privacy by design, ethics in software, Java,Spring Boot, AWS, and Flowable"
             },
             {
-                "keyword": "Technical Support",
-                "description": "Provided technical support to the company's employees"
+                "keyword": "Collaboration",
+                "description": "Collaborated with over 100+ IT professionals, closely working with 15 personnel for best results"
             }
         ]
     }
