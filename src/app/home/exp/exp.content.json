@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Senior Systems Engineer",
+        "company": "Infosys",
+        "startDate": "2021-12-21",
+        "endDate": "2024-07-24",
+        "highlights": [
+            {
+                "keyword": "Overview",
+                "description": "Developed and maintained the company's internal software"
+            },
+            {
+                "keyword": "Network Management",
+                "description": "Managed the company's internal network"
+            },
+            {
+                "keyword": "Technical Support",
+                "description": "Provided technical support to the company's employees"
+            }
+        ]
+    }
+]

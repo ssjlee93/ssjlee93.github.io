@@ -6,6 +6,10 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import experiences from './exp.content.json';
+import { Exp } from './exp.model';
+import { Highlight } from './highlight.model';
 
 @Component({
   selector: 'app-exp',
@@ -16,6 +20,7 @@ import {MatInputModule} from '@angular/material/input';
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
+    MatListModule
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './exp.component.html',
@@ -25,8 +30,18 @@ import {MatInputModule} from '@angular/material/input';
 export class ExpComponent {
   accordion = viewChild.required(MatAccordion);
 
-  infosysStartDate = new Date(2021, 12, 21);
-  infosysEndDate = new Date(2024, 7, 24);
-  infosysDate = `${this.infosysStartDate.toLocaleString("default", {month: "short"})} ${this.infosysStartDate.getFullYear()} 
-  - ${this.infosysEndDate.toLocaleString("default", { month : "short" })} ${this.infosysEndDate.getFullYear()}`;
+  // load experiences from JSON file
+  // and map it to Exp interface
+  exps: Exp[] = experiences.map(e => {
+    const exp: {} = {
+      ...e,
+      highlights: e.highlights.map(h => h as Highlight),
+      startDate: new Date(e.startDate),
+      endDate: new Date(e.endDate),
+      dates: `${new Date(e.startDate).toLocaleString("default", {month: "short"})} ${new Date(e.startDate).getFullYear()} 
+      - ${new Date(e.endDate).toLocaleString("default", {month: "short"})} ${new Date(e.endDate).getFullYear()}`
+    };
+    return exp as Exp;
+  });
+  
 }
