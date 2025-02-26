@@ -1,6 +1,6 @@
 <div class="action-buttons">
-    <button mat-button (click)="accordion().openAll()">Expand All</button>
-    <button mat-button (click)="accordion().closeAll()">Collapse All</button>
+    <button mat-button (click)="accordion().openAll()"><mat-icon>open_in_full</mat-icon>Expand All</button>
+    <button mat-button (click)="accordion().closeAll()"><mat-icon>close_fullscreen</mat-icon>Collapse All</button>
 </div>
 <mat-accordion class="headers-align" multi>
     @for (exp of exps; track exp.id) {
