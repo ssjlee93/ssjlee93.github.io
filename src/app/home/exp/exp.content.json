@@ -25,6 +25,55 @@
         ]
     },
     {
+        "id": 3,
+        "title": "Software Engineer - contract",
+        "company": "Citizens Bank",
+        "startDate": "2022-04-18",
+        "endDate": "2024-02-18",
+        "highlights": [
+            {
+                "keyword": "Overview",
+                "description": "Developed features to production in 2 projects: Working Rules as a Platform (WRaaP) and CorrespondentLending as a Service (CLaaS)"
+            },
+            {
+                "keyword": "Tech Stack",
+                "description": "Developed with Java, Spring Boot, AWS cloud distributed systems, CI/CD, Jenkins, Docker, Red Hat Openshift"
+            },
+            {
+                "keyword": "Leadership",
+                "description": "Led, developed, troubleshoot, and conducted code reviews for 5 microservices using Flowable BPMN engine with a team of 3 for workflow automation"
+            },
+            {
+                "keyword": "System Design",
+                "description": "Discussed software architecture design patterns, such as single responsibility principles (SRP) and CQRS patterns"
+            },
+            {
+                "keyword": "Innovation",
+                "description": "Researched and implemented 2 rules engines with a team of 5 within a month, incorporating 1075rules"
+            },
+            {
+                "keyword": "Documentation",
+                "description": "Authored technical documents: flowcharts, Unified Modeling Language (UML) diagrams, how-to articles, technical playbook in Confluence for all 3 projects with over 15+ pages."
+            },
+            {
+                "keyword": "Frontend",
+                "description": "Developed frontend pages using TypeScript and Angular, leveraging rxjs library to ensure sequential asynchronous RESTful API calls, increasing response time from 1200 ms to 300 ms"
+            },
+            {
+                "keyword": "Problem Solving",
+                "description": "Solved a complex problem that marries Okta authentication and LDAP to retrieve 20,000+ employee metadata"
+            },
+            {
+                "keyword": "Testing",
+                "description": "Wrote 50+ JUnit test cases for microservices, achieving 80% code coverage from 20%"
+            },
+            {
+                "keyword": "Message Broker",
+                "description": "Implemented a REST API that consumes a Kafka topic produced outside the application to process consumer data"
+            }
+        ]
+    },
+    {
         "id": 4,
         "title": "Senior Systems Engineer",
         "company": "Infosys",

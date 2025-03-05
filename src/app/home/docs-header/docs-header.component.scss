@@ -3,6 +3,7 @@
     position: relative;
     height: 420px;
     background: var(--mat-sys-primary-container);
+    background-image: url('/banner.png');
 }
 
 .docs-header-section {
@@ -41,3 +42,4 @@
 .docs-header-start .mat-mdc-raised-button {
     font-size: 15px;
 }
+
