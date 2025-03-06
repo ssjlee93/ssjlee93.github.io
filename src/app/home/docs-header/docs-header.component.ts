@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './docs-header.component.html',
   styleUrl: './docs-header.component.scss',
-  standalone: true
 })
 export class DocsHeaderComponent {
 
