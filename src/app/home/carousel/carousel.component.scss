@@ -7,3 +7,15 @@ button.docs-carousel-nav {
 .docs-carousel-nav-prev {
     left: -50px;
 }
+
+.docs-carousel-content-wrapper {
+    overflow: hidden;
+}
+
+.docs-carousel-content {
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    transition: transform .5s ease-in-out;
+}
+
